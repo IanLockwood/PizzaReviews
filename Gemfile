@@ -46,6 +46,8 @@ gem 'twitter-typeahead-rails', :git => "https://github.com/yourabi/twitter-typea
 gem 'browser'
 gem 'kaminari'
 
+gem 'mechanize'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
