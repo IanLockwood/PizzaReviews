@@ -1,2 +1,10 @@
-h1#main-title.title Welcome#index
-p#find-me.info Find me in app/views/welcome/index.html.erb
+= form_tag welcome_search_path, method: :get, autocomplete: 'off' do
+  = text_field_tag :q, nil, placeholder: 'Name of Restaurant', class: ''
+  = submit_tag "Search", :name => nil
+
+- if @results.present?
+  h1 Reviews for #{@title}
+  - @results.each do |review|
+    p #{review[0]}
+    p #{review[1]}
+    hr
