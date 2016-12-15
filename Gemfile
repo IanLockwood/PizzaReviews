@@ -47,6 +47,8 @@ gem 'browser'
 gem 'kaminari'
 
 gem 'mechanize'
+gem 'tor-privoxy'
+gem 'net-telnet'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
