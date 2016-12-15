@@ -1,3 +1,46 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-title {
+    text-align: center;
+}
+
+.search-form {
+  display: block;
+  margin: 30px auto;
+  max-width: 350px;
+  font-size: 2em;
+}
+
+.submit-btn {
+  display: block;
+  margin: auto;
+  outline: none;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 2px;
+  border: 2px solid pink;
+  background-color: white;
+  color: pink;
+
+  &:hover {
+    background-color: pink;
+    color: white;
+  }
+}
+
+.review-container {
+  border-radius: 2px;
+  border: 2px solid pink;
+  padding: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.glyphicon-star {
+  color: pink;
+  font-size: 20px;
+}

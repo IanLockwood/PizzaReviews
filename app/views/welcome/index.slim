@@ -1,10 +1,14 @@
-= form_tag welcome_search_path, method: :get, autocomplete: 'off' do
-  = text_field_tag :q, nil, placeholder: 'Name of Restaurant', class: ''
-  = submit_tag "Search", :name => nil
+.container
+  h1.main-title Pizza Reviews For Yous!
 
-- if @results.present?
-  h1 Reviews for #{@title}
-  - @results.each do |review|
-    p #{review[0]}
-    p #{review[1]}
-    hr
+  = form_tag welcome_search_path, method: :get, autocomplete: 'off' do
+    = text_field_tag :q, nil, placeholder: 'Name of Restaurant', class: 'search-form'
+    = submit_tag "Search", class: "submit-btn", :name => nil
+
+  - if @results.present?
+    h2 Reviews for #{@title}
+    - @results.each do |review|
+      .review-container
+        - review[0][0].to_i.times do
+          span.glyphicon.glyphicon-star
+        p #{review[1]}
